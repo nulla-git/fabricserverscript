@@ -1,6 +1,3 @@
-function pause{
-   read -rsp "$*"
-}
 
 apt update -qq && apt install -qq --yes openjdk-17-jdk nano
 apt uprade -qq --yes
@@ -13,11 +10,11 @@ echo ----------------------------------------
 wget https://launcher.mojang.com/v1/objects/125e5adf40c659fd3bce3e66e67a16bb49ecc1b9/server.jar
 
 echo You will now enter the server environment to generate the eula.txt
-pause 'Press enter to continue, or CTRL+C to exit.'
+read -rsp $'Press enter to continue, or CTRL+C to exit.'
 java -jar server.jar
 
 echo You will now be put into nano to accept the EULA. Read it here: https://www.minecraft.net/en-us/eula
-pause 'Press enter to continue, or CTRL+C to exit.'
+read -rsp $'Press enter to continue, or CTRL+C to exit.'
 nano eula.txt
 
 cd ../
@@ -27,7 +24,7 @@ echo ---------------------------------------------------------------------------
 echo The fabric installer will now be downloaded, install the server in ~/minecraft_server.
 echo When done, close the launcher and DO NOT GENERATE LAUNCH SCRIPTS, THIS SCRIPT WILL DO IT FOR YOU.
 echo -------------------------------------------------------------------------------------------------
-pause 'Press enter to continue, or CTRL+C to exit.'
+read -rsp $'Press enter to continue, or CTRL+C to exit.'
 wget https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.10.2/fabric-installer-0.10.2.jar
 java -jar fabric-installer-0.10.2.jar
 cd ../
