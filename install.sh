@@ -9,13 +9,18 @@ echo The server jar will now be downloaded...
 echo ----------------------------------------
 wget https://launcher.mojang.com/v1/objects/125e5adf40c659fd3bce3e66e67a16bb49ecc1b9/server.jar
 
+echo ------------------------------------------------------------------
 echo You will now enter the server environment to generate the eula.txt
+echo ------------------------------------------------------------------
 sleep 5s
 java -jar server.jar
 
+echo ----------------------------------------------------------------------------------------------------
 echo You will now be put into nano to accept the EULA. Read it here: https://www.minecraft.net/en-us/eula
-sleep 5s
+echo ----------------------------------------------------------------------------------------------------
+sleep 10s
 nano eula.txt
+
 
 cd ../
 mkdir fabric_launcher
