@@ -1,6 +1,6 @@
 # serversetupscript
 This a script I made to automatically make create a fabric minecraft server.
-#How to use
+# How to use
 1. clone repo
 2. run shell script as root
 3. follow intructions as prompted
