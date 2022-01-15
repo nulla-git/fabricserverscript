@@ -1,4 +1,4 @@
-function pause(){
+function pause{
    read -rsp "$*"
 }
 
