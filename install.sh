@@ -28,6 +28,6 @@ sleep 2s
 cd ../
 cd minecraft_server
 touch start.sh
-echo java -Xmx5g -jar fabric-server-launch.jar
+echo java -Xmx5g -jar fabric-server-launch.jar >> start.sh
 sleep 1s
 echo The server is now set up, run it and have fun!
