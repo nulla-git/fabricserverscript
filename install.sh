@@ -1,6 +1,7 @@
 apt update -qq && apt install -qq --yes openjdk-17-jdk nano
 apt uprade -qq --yes
 sleep 1s
+cd ../
 mkdir minecraft_server
 cd minecraft_server
 sleep 1s
