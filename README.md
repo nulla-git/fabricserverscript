@@ -1,4 +1,4 @@
-# serversetupscript
+# fabricserverscript
 This a script I made to automatically make create a fabric minecraft server.
 # How to use
 1. clone repo
