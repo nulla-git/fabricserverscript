@@ -1,7 +1,7 @@
 
 apt update -qq && apt install -qq --yes openjdk-17-jdk nano
 apt uprade -qq --yes
-cd ../
+cd ~
 mkdir fabric_server
 cd fabric_server
 echo ----------------------------------------
@@ -23,7 +23,7 @@ sleep 10s
 nano eula.txt
 
 
-cd ../
+cd ~
 mkdir fabric_launcher
 cd fabric_launcher
 echo -------------------------------------------------------------------------------------------------
@@ -36,15 +36,15 @@ java -jar fabric-installer-0.10.2.jar
 echo --------------------------------------------------------
 echo Removing fabric_launcher and generating launch script...
 echo --------------------------------------------------------
-cd ../
+cd ~
 cd fabric_server
 touch start.sh
 echo java -Xmx5G -jar fabric-server-launch.jar >> start.sh
 
-cd ../
+cd ~
 cd fabric_launcher
 rm fabric-installer-0.10.2.jar
-cd ../
+cd ~
 rmdir fabric_launcher
 echo -------------------------------------------------------------------------------------------------------------------
 echo The server has been installed in the ~/fabric_server directory.
