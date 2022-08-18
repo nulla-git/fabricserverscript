@@ -1,5 +1,5 @@
 # fabricserverscript
-This a script I made to automatically make create a fabric minecraft server.
+This is a script I made to automatically create a fabric minecraft server in debian.
 # How to use
 1. clone repo
 2. run shell script as root
